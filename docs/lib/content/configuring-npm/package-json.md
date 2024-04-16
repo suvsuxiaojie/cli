@@ -1,41 +1,41 @@
 ---
-title: package.json
-section: 5
-description: Specifics of npm's package.json handling
+标题：package.json
+截面：5
+描述：npm包的详细信息JSON处理
 ---
 
-### Description
+###描述
 
-This document is all you need to know about what's required in your
-package.json file.  It must be actual JSON, not just a JavaScript object
-literal.
+本文档是您所需了解的有关您的
+json文件。它必须是实际的JSON，而不仅仅是JavaScript对象
+文字的。
 
-A lot of the behavior described in this document is affected by the config
-settings described in [`config`](/using-npm/config).
+本文档中描述的许多行为都受配置的影响。
+中描述的设置[`配置`](/using-npm/config).
 
-### name
+###姓名
 
-If you plan to publish your package, the *most* important things in your
-package.json are the name and version fields as they will be required. The
-name and version together form an identifier that is assumed to be
-completely unique.  Changes to the package should come along with changes
-to the version. If you don't plan to publish your package, the name and
-version fields are optional.
+如果您计划发布您的包，则*大多数*在您的
+json是名称和版本字段，因为它们是必需的。这
+名称和版本一起形成一个标识符，该标识符被假定为
+完全唯一。对包的更改应随更改一起进行
+如果您不打算发布您的包，则名称和
+版本字段是可选的。
 
-The name is what your thing is called.
+名字就是你的东西叫什么。
 
-Some rules:
+一些规则：
 
-* The name must be less than or equal to 214 characters. This includes the
-  scope for scoped packages.
-* The names of scoped packages can begin with a dot or an underscore. This
-  is not permitted without a scope.
-* New packages must not have uppercase letters in the name.
-* The name ends up being part of a URL, an argument on the command line,
-  and a folder name. Therefore, the name can't contain any non-URL-safe
-  characters.
+*名称必须少于或等于214个字符。这包括
+作用域包的作用域。
+*作用域包的名称可以以点或下划线开头。这
+没有范围是不允许的。
+*新包的名称中不能有大写字母。
+*该名称最终成为URL的一部分、命令行上的参数、
+和文件夹名称。因此，该名称不能包含任何非URL安全的
+人物。
 
-Some tips:
+一些提示：
 
 * Don't use the same name as a core Node module.
 * Don't put "js" or "node" in the name.  It's assumed that it's js, since
