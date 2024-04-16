@@ -1,5 +1,49 @@
 # Changelog
 
+## [10.6.0](https://github.com/npm/cli/compare/v10.5.2...v10.6.0) (2024-04-16)
+
+### Features
+
+* [`9123de4`](https://github.com/npm/cli/commit/9123de4d282bfd19ea17ad613f5a2acab0e0e162) [#7373](https://github.com/npm/cli/pull/7373) do all ouput over proc-log events (@lukekarrys)
+* [`9622597`](https://github.com/npm/cli/commit/9622597399ec93224fddf90a9209a98dbcfd6b2f) [#7339](https://github.com/npm/cli/pull/7339) refactor terminal display (#7339) (@lukekarrys)
+
+### Bug Fixes
+
+* [`9216d59`](https://github.com/npm/cli/commit/9216d5985fb3e2a2754be5bf0b1d43fc321cf723) [#7377](https://github.com/npm/cli/pull/7377) better output colors (#7377) (@wraithgar)
+* [`6512112`](https://github.com/npm/cli/commit/65121122d99855541f63aa787f8ee8bb4eea4a3f) [#7378](https://github.com/npm/cli/pull/7378) use proc-log for all timers (@lukekarrys)
+* [`2a80dab`](https://github.com/npm/cli/commit/2a80dab2ed1feedf3cd3af8ff7f41846567b2fd3) [#7370](https://github.com/npm/cli/pull/7370) typo in `npm access` usage (#7370) (@mbtools)
+
+### Documentation
+
+* [`c16dd4e`](https://github.com/npm/cli/commit/c16dd4e46b58d6c4490284e6edc5c255862e322b) [#7367](https://github.com/npm/cli/pull/7367) Document that overrides only work in the root `package.json` (#7367) (@s100)
+
+### Dependencies
+
+* [`38ed048`](https://github.com/npm/cli/commit/38ed048ac0d7a36785dbff0eeca3618cb7f084c5) [#7378](https://github.com/npm/cli/pull/7378) `@npmcli/metavuln-calculator@7.1.0`
+* [`7678a3d`](https://github.com/npm/cli/commit/7678a3d92835457bb402c82e4ca7ea3fa734d23b) [#7378](https://github.com/npm/cli/pull/7378) `proc-log@4.1.0`
+* [`87f6c09`](https://github.com/npm/cli/commit/87f6c094ac47f4e6eb5d5d6a03a0ad97711b51e9) [#7373](https://github.com/npm/cli/pull/7373) `@npmcli/metavuln-calculator@7.0.1`
+* [`b8f8b41`](https://github.com/npm/cli/commit/b8f8b414d8ad9635e3efedc6e491c8c6e3df0973) [#7373](https://github.com/npm/cli/pull/7373) `@npmcli/run-script@8.0.0`
+* [`79f79c7`](https://github.com/npm/cli/commit/79f79c7460be8a74f2b77c647100bcefd89b2efa) [#7373](https://github.com/npm/cli/pull/7373) `proc-log@4.0.0`
+* [`9027266`](https://github.com/npm/cli/commit/90272661b16d861a5926af8ec394d32ec0f307fd) [#7373](https://github.com/npm/cli/pull/7373) `pacote@18.0.0`
+* [`ee4b3e0`](https://github.com/npm/cli/commit/ee4b3e0e741545045dc03741c7147560961d867d) [#7373](https://github.com/npm/cli/pull/7373) `npm-registry-fetch@16.2.1`
+* [`0e7789b`](https://github.com/npm/cli/commit/0e7789b7d9ec88c89edcdade9fc898c131ed492a) [#7373](https://github.com/npm/cli/pull/7373) `npm-profile@9.0.1`
+* [`ac98fd3`](https://github.com/npm/cli/commit/ac98fd3a8514f2552555d2b8af74a52e64888797) [#7373](https://github.com/npm/cli/pull/7373) `npm-package-arg@11.0.2`
+* [`9351570`](https://github.com/npm/cli/commit/93515700efbb2147a6e929cf117da9e6e87c0aca) [#7373](https://github.com/npm/cli/pull/7373) `@npmcli/package-json@5.0.3`
+* [`d3a0cfa`](https://github.com/npm/cli/commit/d3a0cfad06ddffe6a3d4968257b7993aea68fc7c) [#7373](https://github.com/npm/cli/pull/7373) `@npmcli/git@5.0.6`
+* [workspace](https://github.com/npm/cli/releases/tag/arborist-v7.5.0): `@npmcli/arborist@7.5.0`
+* [workspace](https://github.com/npm/cli/releases/tag/config-v8.3.0): `@npmcli/config@8.3.0`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmaccess-v8.0.4): `libnpmaccess@8.0.4`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmdiff-v6.1.0): `libnpmdiff@6.1.0`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmexec-v8.0.0): `libnpmexec@8.0.0`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmfund-v5.0.8): `libnpmfund@5.0.8`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmhook-v10.0.3): `libnpmhook@10.0.3`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmorg-v6.0.4): `libnpmorg@6.0.4`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmpack-v7.0.0): `libnpmpack@7.0.0`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmpublish-v9.0.6): `libnpmpublish@9.0.6`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmsearch-v7.0.3): `libnpmsearch@7.0.3`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmteam-v6.0.3): `libnpmteam@6.0.3`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmversion-v6.0.0): `libnpmversion@6.0.0`
+
 ## [10.5.2](https://github.com/npm/cli/compare/v10.5.1...v10.5.2) (2024-04-10)
 
 ### Bug Fixes
