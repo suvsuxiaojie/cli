@@ -505,7 +505,6 @@ graph LR;
   npm-->libnpmsearch;
   npm-->libnpmteam;
   npm-->libnpmversion;
-  npm-->licensee;
   npm-->make-fetch-happen;
   npm-->minimatch;
   npm-->minipass-pipeline;

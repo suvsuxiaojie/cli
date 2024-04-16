@@ -208,7 +208,6 @@
     "ajv-formats": "^2.1.1",
     "ajv-formats-draft2019": "^1.6.1",
     "diff": "^5.2.0",
-    "licensee": "^10.0.0",
     "nock": "^13.4.0",
     "npm-packlist": "^8.0.2",
     "remark": "^14.0.2",
@@ -220,7 +219,7 @@
   "scripts": {
     "dependencies": "node scripts/bundle-and-gitignore-deps.js && node scripts/dependency-graph.js",
     "dumpconf": "env | grep npm | sort | uniq",
-    "licenses": "licensee --production --errors-only",
+    "licenses": "node scripts/licenses.js",
     "test": "tap",
     "test:nocolor": "CI=true tap -Rclassic",
     "test-all": "node . run test -ws -iwr --if-present",
